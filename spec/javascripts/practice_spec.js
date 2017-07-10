@@ -181,7 +181,33 @@ describe("encode", function(){
 	});
 });
 
+describe("find longest", function(){
+	it("returns longes digit of a given array with numbers", function(){
+		expect(findLongest([1, 10, 100])).toEqual(100)
+	});
 
+it("returns longes digit of a given array with numbers", function(){
+		expect(findLongest([1, 200, 100000])).toEqual(1000000)
+	});
+
+it("returns longes digit of a given array with numbers", function(){
+		expect(findLongest([1, 200, 300])).toEqual(200)
+	});
+});
+
+describe("get count", function(){
+	it("returns how many vowels and consonants has a word", function(){
+		expect(getCount("Test")).toEqual([1, 3])
+	});
+
+	it("returns how many vowels and consonants has a word", function(){
+		expect(getCount("To be a Codewarrior or not to be")).toEqual([12, 13])
+	});
+
+	it("returns how many vowels and consonants has a word", function(){
+		expect(getCount("$$%&*12345 66 }} ab")).toEqual([1, 1])
+	});
+});
 
 
 
