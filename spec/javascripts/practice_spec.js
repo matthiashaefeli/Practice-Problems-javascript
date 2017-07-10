@@ -55,7 +55,7 @@ describe("auto complete",function(){
 								  'amazing',
 								  'apple',
 								  'ball' ];
-		expect(auto_complete("ai", dictionary)).toEqual(["airplane", "airport"])
+		expect(autoComplete("ai", dictionary)).toEqual(["airplane", "airport"])
 	});
 
 	it("returns an array (only first 5 elements) of a dictionary if the first given letters mach",function(){
@@ -67,45 +67,149 @@ describe("auto complete",function(){
 								  'amazing',
 								  'apple',
 								  'ball' ];
-		expect(auto_complete("a", dictionary)).toEqual(['abnormal','arm-wrestling','absolute','airplane','airport'])
+		expect(autoComplete("a", dictionary)).toEqual(['abnormal','arm-wrestling','absolute','airplane','airport'])
 	});
 });
 
 describe("counting duplicates",function(){
 	it("returns the number of dublicated letters or numbers",function(){
-		expect(counting_duplicates("")).toEqual(0)
+		expect(countingDuplicates("")).toEqual(0)
 	});
 
 	it("returns the number of dublicated letters or numbers",function(){
-		expect(counting_duplicates("abcdefg")).toEqual(0)
+		expect(countingDuplicates("abcdefg")).toEqual(0)
 	});
 
 	it("returns the number of dublicated letters or numbers",function(){
-		expect(counting_duplicates("hello")).toEqual(1)
+		expect(countingDuplicates("hello")).toEqual(1)
 	});
 
 	it("returns the number of dublicated letters or numbers",function(){
-		expect(counting_duplicates("Indivisibilities")).toEqual(2)
+		expect(countingDuplicates("Indivisibilities")).toEqual(2)
 	});
 });
 
 describe("reverse alphabetic characters", function(){
 	it("reverse a given string without non alphabetic characters", function(){
-		expect(reverse_alphabetic_characters("krishan")).toEqual("nahsirk")
+		expect(reverseAlphabeticCharacters("krishan")).toEqual("nahsirk")
 	});
 
 	it("reverse a given string without non alphabetic characters", function(){
-		expect(reverse_alphabetic_characters("ab23c")).toEqual("cba")
+		expect(reverseAlphabeticCharacters("ab23c")).toEqual("cba")
 	});
 
 	it("reverse a given string without non alphabetic characters", function(){
-		expect(reverse_alphabetic_characters("ultr53o?n")).toEqual("nortlu")
+		expect(reverseAlphabeticCharacters("ultr53o?n")).toEqual("nortlu")
 	});
 
 	it("reverse a given string without non alphabetic characters", function(){
-		expect(reverse_alphabetic_characters("n&^%$2556_o")).toEqual("on")
+		expect(reverseAlphabeticCharacters("n&^%$2556_o")).toEqual("on")
 	});
 });
+
+describe("sum of pairs", function(){
+	it("returns the two integers given the given sum",function(){
+		var integers = [1, 4, 8, 7, 3, 15]
+		var sum = 8
+		expect(sumOfPairs(integers, sum)).toEqual(1, 7)
+	});
+
+	it("returns the two integers given the given sum",function(){
+		var integers = [1, -2, 3, 0, -6, 1]
+		var sum = -6
+		expect(sumOfPairs(integers, sum)).toEqual(0, -6)
+	});
+
+	it("returns the two integers given the given sum",function(){
+		var integers = [1, 2, 3, 4, 1, 0]
+		var sum = 2
+		expect(sumOfPairs(integers, sum)).toEqual(1, 1)
+	});
+
+	it("returns the two integers given the given sum",function(){
+		var integers = [10, 5, 2, 3, 7, 5]
+		var sum = 10
+		expect(sumOfPairs(integers, sum)).toEqual(5, 5)
+	});
+
+	it("returns the two integers given the given sum",function(){
+		var integers = [5, 9, 13, -3]
+		var sum = 10
+		expect(sumOfPairs(integers, sum)).toEqual(13, -3)
+	});
+});
+
+describe("binary code",function(){
+	it("returns the number of a binary code",function(){
+		expect(binaryCode(0, 0, 0, 1)).toEqual(1)
+	});
+
+	it("returns the number of a binary code",function(){
+		expect(binaryCode(0, 0, 1, 0)).toEqual(2)
+	});
+
+	it("returns the number of a binary code",function(){
+		expect(binaryCode(1, 1, 1, 1)).toEqual(15)
+	});
+
+	it("returns the number of a binary code",function(){
+		expect(binaryCode(0, 1, 1, 0)).toEqual(6)
+	});
+});
+
+describe("square digits", function(){
+	it("returns square of each number", function(){
+		expect(squareDigits(3212)).toEqual(9414)
+	});
+
+	it("returns square of each number", function(){
+		expect(squareDigits(1234321)).toEqual(14916941)
+	});
+});
+
+describe("encode", function(){
+	it("returns an array with ne number given of a string and a key", function(){
+		expect(encode("scout", 1939)).toEqual([20, 12, 18, 30, 21])
+	});
+
+	it("returns an array with ne number given of a string and a key", function(){
+		expect(encode("masterpiece", 1939)).toEqual([14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8])
+	});
+
+	it("returns an array with ne number given of a string and a key", function(){
+		expect(encode("aaaaaaa", 18)).toEqual([2,9,2,9,2,9,2])
+	});
+});
+
+describe("find longest", function(){
+	it("returns longes digit of a given array with numbers", function(){
+		expect(findLongest([1, 10, 100])).toEqual(100)
+	});
+
+it("returns longes digit of a given array with numbers", function(){
+		expect(findLongest([1, 200, 100000])).toEqual(1000000)
+	});
+
+it("returns longes digit of a given array with numbers", function(){
+		expect(findLongest([1, 200, 300])).toEqual(200)
+	});
+});
+
+describe("get count", function(){
+	it("returns how many vowels and consonants has a word", function(){
+		expect(getCount("Test")).toEqual([1, 3])
+	});
+
+	it("returns how many vowels and consonants has a word", function(){
+		expect(getCount("To be a Codewarrior or not to be")).toEqual([12, 13])
+	});
+
+	it("returns how many vowels and consonants has a word", function(){
+		expect(getCount("$$%&*12345 66 }} ab")).toEqual([1, 1])
+	});
+});
+
+
 
 
 
