@@ -157,6 +157,16 @@ describe("binary code",function(){
 	});
 });
 
+describe("square digits", function(){
+	it("returns square of each number", function(){
+		expect(squareDigits(3212)).toEqual(9414)
+	});
+
+	it("returns square of each number", function(){
+		expect(squareDigits(1234321)).toEqual(14916941)
+	});
+});
+
 
 
 
