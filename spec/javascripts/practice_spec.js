@@ -167,6 +167,22 @@ describe("square digits", function(){
 	});
 });
 
+describe("encode", function(){
+	it("returns an array with ne number given of a string and a key", function(){
+		expect(encode("scout", 1939)).toEqual([20, 12, 18, 30, 21])
+	});
+
+	it("returns an array with ne number given of a string and a key", function(){
+		expect(encode("masterpiece", 1939)).toEqual([14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8])
+	});
+
+	it("returns an array with ne number given of a string and a key", function(){
+		expect(encode("aaaaaaa", 18)).toEqual([2,9,2,9,2,9,2])
+	});
+});
+
+
+
 
 
 
