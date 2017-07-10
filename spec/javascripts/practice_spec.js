@@ -69,4 +69,55 @@ describe("auto complete",function(){
 								  'ball' ];
 		expect(auto_complete("a", dictionary)).toEqual(['abnormal','arm-wrestling','absolute','airplane','airport'])
 	});
-})
+});
+
+describe("counting duplicates",function(){
+	it("returns the number of dublicated letters or numbers",function(){
+		expect(counting_duplicates("")).toEqual(0)
+	});
+
+	it("returns the number of dublicated letters or numbers",function(){
+		expect(counting_duplicates("abcdefg")).toEqual(0)
+	});
+
+	it("returns the number of dublicated letters or numbers",function(){
+		expect(counting_duplicates("hello")).toEqual(1)
+	});
+
+	it("returns the number of dublicated letters or numbers",function(){
+		expect(counting_duplicates("Indivisibilities")).toEqual(2)
+	});
+});
+
+describe("reverse alphabetic characters", function(){
+	it("reverse a given string without non alphabetic characters", function(){
+		expect(reverse_alphabetic_characters("krishan")).toEqual("nahsirk")
+	});
+
+	it("reverse a given string without non alphabetic characters", function(){
+		expect(reverse_alphabetic_characters("ab23c")).toEqual("cba")
+	});
+
+	it("reverse a given string without non alphabetic characters", function(){
+		expect(reverse_alphabetic_characters("ultr53o?n")).toEqual("nortlu")
+	});
+
+	it("reverse a given string without non alphabetic characters", function(){
+		expect(reverse_alphabetic_characters("n&^%$2556_o")).toEqual("on")
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
