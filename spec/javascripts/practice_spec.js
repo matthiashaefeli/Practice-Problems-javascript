@@ -221,7 +221,20 @@ describe("mean", function(){
 	});
 });
 
+describe("groupe", function(){
 
+	it("returns an array of an array sort in numbers how the given", function(){
+		expect(group([3, 2, 6, 2, 1, 3])).toEqual([3, 3], [2, 2], [6], [1]])
+	});
+
+	it("returns an array of an array sort in numbers how the given", function(){
+		expect(group([3, 2, 6, 2])).toEqual([3], [2, 2], [6])
+	});
+
+	it("returns an array of an array sort in numbers how the given", function(){
+		expect(group([1, 100, 4, 2, 4])).toEqual([[1], [100], [4, 4], [2]])
+	});
+});
 
 
 
