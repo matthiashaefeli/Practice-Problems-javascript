@@ -224,15 +224,26 @@ describe("mean", function(){
 describe("groupe", function(){
 
 	it("returns an array of an array sort in numbers how the given", function(){
-		expect(group([3, 2, 6, 2, 1, 3])).toEqual([3, 3], [2, 2], [6], [1]])
+		expect(group([3, 2, 6, 2, 1, 3])).toEqual([[3, 3], [2, 2], [6], [1]])
 	});
 
 	it("returns an array of an array sort in numbers how the given", function(){
-		expect(group([3, 2, 6, 2])).toEqual([3], [2, 2], [6])
+		expect(group([3, 2, 6, 2])).toEqual([[3], [2, 2], [6]])
 	});
 
 	it("returns an array of an array sort in numbers how the given", function(){
 		expect(group([1, 100, 4, 2, 4])).toEqual([[1], [100], [4, 4], [2]])
+	});
+});
+
+describe("delete nth", function(){
+
+	it("returns a given array with the given count max of each element", function(){
+		expect(deleteNth([20,37,20,21], 1)).toEqual([20,37,21])
+	});
+
+	it("returns a given array with the given count max of each element", function(){
+		expect(deleteNth([1,1,3,3,7,2,2,2,2], 3)).toEqual([1, 1, 3, 3, 7, 2, 2, 2])
 	});
 });
 
