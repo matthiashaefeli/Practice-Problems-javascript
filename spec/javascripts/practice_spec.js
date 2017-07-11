@@ -209,6 +209,18 @@ describe("get count", function(){
 	});
 });
 
+describe("mean", function(){
+	it("returns an array with the sum of the given number and the string", function(){ 
+		var list = ["u", "6", "d", "1", "i", "w", "6", "s", "t", "4", "a", "6", "g", "1", "2", "w", "8", "o", "2", "0"]
+		expect(mean(list)).toEqual([3.6, "udiwstagwo"])
+	});
+
+	it("returns an array with the sum of the given number and the string", function(){ 
+		var list = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "0", "a", "a", "d", "d", "g", "q", "u", "v", "y", "y"]
+		expect(mean(list)).toEqual([0.9, "aaddgquvyy"])
+	});
+});
+
 
 
 
