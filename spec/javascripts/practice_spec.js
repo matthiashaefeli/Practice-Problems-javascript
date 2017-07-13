@@ -309,6 +309,22 @@ describe("find it", function(){
 	});
 });
 
+describe("duplicate encode", function(){
+	it(" convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'", function(){
+		expect(duplicate("din")).toEqual("(((")
+	});
+
+	it(" convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'", function(){
+		expect(duplicate("Success")).toEqual(")())())")
+	});
+
+	it(" convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'", function(){
+		expect(duplicate("(( @")).toEqual("))((")
+	});
+});
+
+
+
 
 
 
