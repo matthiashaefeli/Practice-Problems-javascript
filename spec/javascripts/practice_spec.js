@@ -247,6 +247,91 @@ describe("delete nth", function(){
 	});
 });
 
+describe("take", function(){
+
+	it("takes an array and an integer and give ....... check tests", function(){
+		expect(take([1,2,3,4], 1)).toEqual([2,3,4])
+	});
+
+	it("takes an array and an integer and give ....... check tests", function(){
+		expect(take([1,2,3,4], 2)).toEqual([3,4])
+	});
+
+	it("takes an array and an integer and give ....... check tests", function(){
+		expect(take([1,2,3,4])).toEqual([1,2,3,4])
+	});
+});
+
+describe("find even index", function(){
+	it("takes an array and return the index of the number in the middle where both side give the same sum", function(){
+		expect(findEvenIndex([1,2,3,4,5,6])).toEqual(-1)
+	});
+
+	it("takes an array and return the index of the number in the middle where both side give the same sum", function(){
+		expect(findEvenIndex([20,10,30,10,10,15,35])).toEqual(4)
+	});
+
+	it("takes an array and return the index of the number in the middle where both side give the same sum", function(){
+		expect(findEvenIndex([10,-80,10,10,15,35,20])).toEqual(6)
+	});
+
+	it("takes an array and return the index of the number in the middle where both side give the same sum", function(){
+		expect(findEvenIndex([-1,-2,-3,-4,-3,-2,-1])).toEqual(3)
+	});
+});
+
+describe("increment string", function(){
+	it("takes a string and a number and give back the string with the number +1", function(){
+		expect(increment("foo")).toEqual("foo1")
+	});
+
+	it("takes a string and a number and give back the string with the number +1", function(){
+		expect(increment("foobar1")).toEqual("foobar2")
+	});
+
+	it("takes a string and a number and give back the string with the number +1", function(){
+		expect(increment("")).toEqual("1")
+	});
+
+	it("takes a string and a number and give back the string with the number +1", function(){
+		expect(increment("foobar99")).toEqual("foobar100")
+	});
+});
+
+
+describe("find it", function(){
+	it("Given an array, find the int that appears an odd number of times.", function(){
+		expect(findIt([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5])).toEqual(5)
+	});
+
+	it("Given an array, find the int that appears an odd number of times.", function(){
+		expect(findIt([1,1,1,1,1,1,10,1,1,1,1])).toEqual(10)
+	});
+});
+
+describe("duplicate encode", function(){
+	it(" convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'", function(){
+		expect(duplicate("din")).toEqual("(((")
+	});
+
+	it(" convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'", function(){
+		expect(duplicate("Success")).toEqual(")())())")
+	});
+
+	it(" convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'", function(){
+		expect(duplicate("(( @")).toEqual("))((")
+	});
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
