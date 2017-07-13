@@ -247,6 +247,23 @@ describe("delete nth", function(){
 	});
 });
 
+describe("take", function(){
+
+	it("takes an array and an integer and give ....... check tests", function(){
+		expect(take([1,2,3,4], 1)).toEqual([2,3,4])
+	});
+
+	it("takes an array and an integer and give ....... check tests", function(){
+		expect(take([1,2,3,4], 2)).toEqual([3,4])
+	});
+
+	it("takes an array and an integer and give ....... check tests", function(){
+		expect(take([1,2,3,4])).toEqual([1,2,3,4])
+	});
+});
+
+
+
 
 
 
