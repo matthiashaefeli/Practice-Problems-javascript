@@ -299,7 +299,15 @@ describe("increment string", function(){
 });
 
 
+describe("find it", function(){
+	it("Given an array, find the int that appears an odd number of times.", function(){
+		expect(findIt([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5])).toEqual(5)
+	});
 
+	it("Given an array, find the int that appears an odd number of times.", function(){
+		expect(findIt([1,1,1,1,1,1,10,1,1,1,1])).toEqual(10)
+	});
+});
 
 
 
