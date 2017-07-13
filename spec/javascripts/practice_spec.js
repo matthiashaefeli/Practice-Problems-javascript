@@ -280,7 +280,23 @@ describe("find even index", function(){
 	});
 });
 
+describe("increment string", function(){
+	it("takes a string and a number and give back the string with the number +1", function(){
+		expect(increment("foo")).toEqual("foo1")
+	});
 
+	it("takes a string and a number and give back the string with the number +1", function(){
+		expect(increment("foobar1")).toEqual("foobar2")
+	});
+
+	it("takes a string and a number and give back the string with the number +1", function(){
+		expect(increment("")).toEqual("1")
+	});
+
+	it("takes a string and a number and give back the string with the number +1", function(){
+		expect(increment("foobar99")).toEqual("foobar100")
+	});
+});
 
 
 
