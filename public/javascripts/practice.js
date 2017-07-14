@@ -9,3 +9,8 @@ function makeArrayConsecutive2(array) {
 	}
 	return result
 }
+
+function kebabize(string) {
+	var newString = string.replace(/([A-Z])/g, "-$1").toLowerCase()
+	return newString
+}
