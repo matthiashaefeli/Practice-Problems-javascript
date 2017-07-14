@@ -5,7 +5,7 @@ function makeArrayConsecutive2(array) {
 	for(var index = first; index < last; index++) {
 		if (array.includes(index) === false) {
 			result += 1
-		};
-	};
+		}
+	}
 	return result
-};
+}
