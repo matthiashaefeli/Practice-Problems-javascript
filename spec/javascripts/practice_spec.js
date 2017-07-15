@@ -29,7 +29,7 @@ describe("middle", function(){
 	});
 
 	it("returns the middle character of a given string", function(){
-		expect(middle("testing")).toEqual("t")
+		expect(middle("testingstring00809ljhsdlfj")).toEqual("g0")
 	});
 
 	it("returns the middle character of a given string", function(){

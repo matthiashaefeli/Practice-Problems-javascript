@@ -14,3 +14,14 @@ function kebabize(string) {
 	var newString = string.replace(/([A-Z])/g, "-$1").toLowerCase()
 	return newString
 }
+
+function middle(string) {
+	var result = ""
+	var middle = string.length / 2
+	if(string.length % 2 === 0) {
+			result = string[middle - 1] + string[middle]
+	}else {
+			result = string[Math.floor(middle)]
+	}
+	return result
+}
