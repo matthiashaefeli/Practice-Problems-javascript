@@ -25,3 +25,16 @@ function middle(string) {
 	}
 	return result
 }
+
+function autoComplete(letters, dictionary) {
+	var result = []
+	dictionary.forEach(function(word){
+		if(word.substring(0, letters.length) === letters){
+			result.push(word)
+		}
+	})
+		while(result.length > 5){
+			result.pop()
+		}
+		return result
+}
