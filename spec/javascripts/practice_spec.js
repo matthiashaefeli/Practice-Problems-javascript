@@ -29,7 +29,7 @@ describe("middle", function(){
 	});
 
 	it("returns the middle character of a given string", function(){
-		expect(middle("testing")).toEqual("t")
+		expect(middle("testingstring00809ljhsdlfj")).toEqual("g0")
 	});
 
 	it("returns the middle character of a given string", function(){
@@ -46,7 +46,7 @@ describe("middle", function(){
 });
 
 describe("auto complete",function(){
-	it("returns an array (only first 5 elements) of a dictionary if the first given letters mach",function(){
+	it("returns an array (only first 5 elements) of a dictionary if the first given letters match",function(){
 		var dictionary = [ 'abnormal',
 								  'arm-wrestling',
 								  'absolute',
@@ -58,7 +58,7 @@ describe("auto complete",function(){
 		expect(autoComplete("ai", dictionary)).toEqual(["airplane", "airport"])
 	});
 
-	it("returns an array (only first 5 elements) of a dictionary if the first given letters mach",function(){
+	it("returns an array (only first 5 elements) of a dictionary if the first given letters match",function(){
 		var dictionary = [ 'abnormal',
 								  'arm-wrestling',
 								  'absolute',
