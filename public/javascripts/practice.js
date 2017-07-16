@@ -38,3 +38,16 @@ function autoComplete(letters, dictionary) {
 		}
 		return result
 }
+
+function countingDuplicates(string){
+}
+
+function reverseAlphabeticCharacters(string){
+	
+}
+
+
+
+
+
+
