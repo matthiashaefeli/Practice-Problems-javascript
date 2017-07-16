@@ -43,7 +43,12 @@ function countingDuplicates(string){
 }
 
 function reverseAlphabeticCharacters(string){
-	
+	var result = []
+	var letterArray = string.replace(/\W|\_|\d/g, "")
+	letterArray.split("").forEach(function(letter){
+		result.unshift(letter)
+	})
+	return result.join("")
 }
 
 
