@@ -111,31 +111,31 @@ describe("sum of pairs", function(){
 	it("returns the two integers given the given sum",function(){
 		var integers = [1, 4, 8, 7, 3, 15]
 		var sum = 8
-		expect(sumOfPairs(integers, sum)).toEqual(1, 7)
+		expect(sumOfPairs(integers, sum)).toEqual([1, 7])
 	});
 
 	it("returns the two integers given the given sum",function(){
 		var integers = [1, -2, 3, 0, -6, 1]
 		var sum = -6
-		expect(sumOfPairs(integers, sum)).toEqual(0, -6)
+		expect(sumOfPairs(integers, sum)).toEqual([0, -6])
 	});
 
 	it("returns the two integers given the given sum",function(){
 		var integers = [1, 2, 3, 4, 1, 0]
 		var sum = 2
-		expect(sumOfPairs(integers, sum)).toEqual(1, 1)
+		expect(sumOfPairs(integers, sum)).toEqual([1, 1])
 	});
 
 	it("returns the two integers given the given sum",function(){
 		var integers = [10, 5, 2, 3, 7, 5]
 		var sum = 10
-		expect(sumOfPairs(integers, sum)).toEqual(5, 5)
+		expect(sumOfPairs(integers, sum)).toEqual([5, 5])
 	});
 
 	it("returns the two integers given the given sum",function(){
 		var integers = [5, 9, 13, -3]
 		var sum = 10
-		expect(sumOfPairs(integers, sum)).toEqual(13, -3)
+		expect(sumOfPairs(integers, sum)).toEqual([13, -3])
 	});
 });
 

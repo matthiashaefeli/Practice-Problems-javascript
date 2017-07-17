@@ -51,6 +51,18 @@ function reverseAlphabeticCharacters(string){
 	return result.join("")
 }
 
+function sumOfPairs(integers, sum){
+	var result = []
+	for(var i = 0; i < integers.length; i++) {
+		for(var itwo = 1; itwo < integers.length; itwo++) {
+			if(integers[i] + integers[itwo] === sum) {
+				result.push(integers[i], integers[itwo])
+				return result
+			}
+		}
+	}
+}
+
 
 
 
