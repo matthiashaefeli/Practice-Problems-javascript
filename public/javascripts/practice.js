@@ -69,6 +69,26 @@ function binaryCode(binary){
 	return integer
 }
 
+function squareDigits(integer){
+	var string = integer.toString();
+	var numbersArray = string.split("")
+	var result = []
+	numbersArray.forEach(function(number){
+		result.push(number * number)
+	})
+	return parseInt(result.join(""))
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
