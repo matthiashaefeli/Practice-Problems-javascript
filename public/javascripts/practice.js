@@ -79,9 +79,17 @@ function squareDigits(integer){
 	return parseInt(result.join(""))
 }
 
-
-
-
+function findLongest(numberArray){
+	var length = 0
+	var result = 0
+	numberArray.forEach(function(n){
+		if(n.toString().length > length){
+			length = n.toString().length
+			result = n
+		}
+	})
+	return result
+}
 
 
 
