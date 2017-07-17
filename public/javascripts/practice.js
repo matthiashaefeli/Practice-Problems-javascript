@@ -43,7 +43,24 @@ function countingDuplicates(string){
 }
 
 function reverseAlphabeticCharacters(string){
-	
+	var result = []
+	var letterArray = string.replace(/\W|\_|\d/g, "")
+	letterArray.split("").forEach(function(letter){
+		result.unshift(letter)
+	})
+	return result.join("")
+}
+
+function sumOfPairs(integers, sum){
+	var result = []
+	for(var i = 0; i < integers.length; i++) {
+		for(var itwo = 1; itwo < integers.length; itwo++) {
+			if(integers[i] + integers[itwo] === sum) {
+				result.push(integers[i], integers[itwo])
+				return result
+			}
+		}
+	}
 }
 
 
