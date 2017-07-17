@@ -187,7 +187,7 @@ describe("find longest", function(){
 	});
 
 it("returns longes digit of a given array with numbers", function(){
-		expect(findLongest([1, 200, 100000])).toEqual(1000000)
+		expect(findLongest([1, 200, 100000])).toEqual(100000)
 	});
 
 it("returns longes digit of a given array with numbers", function(){
