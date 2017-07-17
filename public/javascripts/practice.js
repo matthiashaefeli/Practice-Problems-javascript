@@ -63,6 +63,11 @@ function sumOfPairs(integers, sum){
 	}
 }
 
+function binaryCode(binary){
+	var binarystring = binary.join("")
+	var integer = parseInt(binarystring, 2)
+	return integer
+}
 
 
 

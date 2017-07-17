@@ -141,19 +141,19 @@ describe("sum of pairs", function(){
 
 describe("binary code",function(){
 	it("returns the number of a binary code",function(){
-		expect(binaryCode(0, 0, 0, 1)).toEqual(1)
+		expect(binaryCode([0, 0, 0, 1])).toEqual(1)
 	});
 
 	it("returns the number of a binary code",function(){
-		expect(binaryCode(0, 0, 1, 0)).toEqual(2)
+		expect(binaryCode([0, 0, 1, 0])).toEqual(2)
 	});
 
 	it("returns the number of a binary code",function(){
-		expect(binaryCode(1, 1, 1, 1)).toEqual(15)
+		expect(binaryCode([1, 1, 1, 1])).toEqual(15)
 	});
 
 	it("returns the number of a binary code",function(){
-		expect(binaryCode(0, 1, 1, 0)).toEqual(6)
+		expect(binaryCode([0, 1, 1, 0])).toEqual(6)
 	});
 });
 
