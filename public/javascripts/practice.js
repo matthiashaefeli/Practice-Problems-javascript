@@ -120,7 +120,11 @@ function mean(array){
 	return result
 }
 
-
+function group(array){
+	array.forEach(function(n){
+		
+	})
+}
 
 
 
