@@ -91,6 +91,21 @@ function findLongest(numberArray){
 	return result
 }
 
+function getCount(string){
+	var result = []
+	var vowelsCount = 0
+	var letterArray = string.replace(/\W|\_|\d/g, "")
+	var vowels = ["a", "e", "i", "e", "o", "u"]
+	letterArray.split("").forEach(function(l){
+		if(vowels.includes(l)){
+			vowelsCount += 1
+		}
+	})
+	result.push(vowelsCount);
+	result.push(letterArray.length - vowelsCount)
+	return result
+}
+
 
 
 
