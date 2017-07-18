@@ -107,6 +107,32 @@ function getCount(string){
 }
 
 
+function mean(array){
+	var result = []
+	var letter = array.join("").replace(/\d/g, "")
+	var numbers = array.join("").replace(/[a-z]/g, "")
+	var totalNumbers = 0
+	numbers.split("").forEach(function(n){
+		totalNumbers += parseInt(n)
+	})
+	result.push(totalNumbers/10);
+	result.push(letter);
+	return result
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
