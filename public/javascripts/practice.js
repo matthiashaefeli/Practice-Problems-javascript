@@ -28,76 +28,76 @@ function middle(string) {
 
 function autoComplete(letters, dictionary) {
 	var result = []
-	dictionary.forEach(function(word){
-		if(word.substring(0, letters.length) === letters){
+	dictionary.forEach(function(word) {
+		if(word.substring(0, letters.length) === letters) {
 			result.push(word)
 		}
 	})
-		while(result.length > 5){
+		while(result.length > 5) {
 			result.pop()
 		}
 		return result
 }
 
-function countingDuplicates(string){
+function countingDuplicates(string) {
 }
 
-function reverseAlphabeticCharacters(string){
+function reverseAlphabeticCharacters(string) {
 	var result = []
-	var letterArray = string.replace(/\W|\_|\d/g, "")
-	letterArray.split("").forEach(function(letter){
+	var letterArray = string.replace(/\W|_|\d/g, "")
+	letterArray.split("").forEach(function(letter) {
 		result.unshift(letter)
 	})
 	return result.join("")
 }
 
-function sumOfPairs(integers, sum){
+function sumOfPairs(integers, sum) {
 	var result = []
-	for(var i = 0; i < integers.length; i++) {
+	for(var index = 0; index < integers.length; index++) {
 		for(var itwo = 1; itwo < integers.length; itwo++) {
-			if(integers[i] + integers[itwo] === sum) {
-				result.push(integers[i], integers[itwo])
+			if(integers[index] + integers[itwo] === sum) {
+				result.push(integers[index], integers[itwo])
 				return result
 			}
 		}
 	}
 }
 
-function binaryCode(binary){
+function binaryCode(binary) {
 	var binarystring = binary.join("")
 	var integer = parseInt(binarystring, 2)
 	return integer
 }
 
-function squareDigits(integer){
+function squareDigits(integer) {
 	var string = integer.toString();
 	var numbersArray = string.split("")
 	var result = []
-	numbersArray.forEach(function(number){
+	numbersArray.forEach(function(number) {
 		result.push(number * number)
 	})
-	return parseInt(result.join(""))
+	return parseInt(result.join(""), 10)
 }
 
-function findLongest(numberArray){
+function findLongest(numberArray) {
 	var length = 0
 	var result = 0
-	numberArray.forEach(function(n){
-		if(n.toString().length > length){
-			length = n.toString().length
-			result = n
+	numberArray.forEach(function(num) {
+		if(num.toString().length > length) {
+			length = num.toString().length
+			result = num
 		}
 	})
 	return result
 }
 
-function getCount(string){
+function getCount(string) {
 	var result = []
 	var vowelsCount = 0
-	var letterArray = string.replace(/\W|\_|\d/g, "")
+	var letterArray = string.replace(/\W|_|\d/g, "")
 	var vowels = ["a", "e", "i", "e", "o", "u"]
-	letterArray.split("").forEach(function(l){
-		if(vowels.includes(l)){
+	letterArray.split("").forEach(function(letter) {
+		if(vowels.includes(letter)) {
 			vowelsCount += 1
 		}
 	})
@@ -107,42 +107,18 @@ function getCount(string){
 }
 
 
-function mean(array){
+function mean(array) {
 	var result = []
 	var letter = array.join("").replace(/\d/g, "")
 	var numbers = array.join("").replace(/[a-z]/g, "")
 	var totalNumbers = 0
-	numbers.split("").forEach(function(n){
-		totalNumbers += parseInt(n)
+	numbers.split("").forEach(function(num) {
+		totalNumbers += parseInt(num, 10)
 	})
-	result.push(totalNumbers/10);
+	result.push(totalNumbers / 10);
 	result.push(letter);
 	return result
 }
 
-function group(array){
-	array.forEach(function(n){
-		
-	})
+function group(array) {
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
