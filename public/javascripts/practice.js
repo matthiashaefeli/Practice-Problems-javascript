@@ -120,5 +120,10 @@ function mean(array) {
 	return result
 }
 
-function group(array) {
+function take(array, integer) {
+	return array.slice(integer)
 }
+
+
+
+
