@@ -124,6 +124,16 @@ function take(array, integer) {
 	return array.slice(integer)
 }
 
+function increment(string) {
+	number = string.replace(/\D/g, "")
+	if(number === ""){
+		return string + "1"
+	} else {
+	result = parseInt(number) + 1
+	return string.replace(/\d/g, "") + result.toString()
+	}
+}
+
 
 
 

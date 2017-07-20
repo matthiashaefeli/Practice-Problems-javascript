@@ -262,24 +262,6 @@ describe("take", function(){
 	});
 });
 
-describe("find even index", function(){
-	it("takes an array and return the index of the number in the middle where both side give the same sum", function(){
-		expect(findEvenIndex([1,2,3,4,5,6])).toEqual(-1)
-	});
-
-	it("takes an array and return the index of the number in the middle where both side give the same sum", function(){
-		expect(findEvenIndex([20,10,30,10,10,15,35])).toEqual(4)
-	});
-
-	it("takes an array and return the index of the number in the middle where both side give the same sum", function(){
-		expect(findEvenIndex([10,-80,10,10,15,35,20])).toEqual(6)
-	});
-
-	it("takes an array and return the index of the number in the middle where both side give the same sum", function(){
-		expect(findEvenIndex([-1,-2,-3,-4,-3,-2,-1])).toEqual(3)
-	});
-});
-
 describe("increment string", function(){
 	it("takes a string and a number and give back the string with the number +1", function(){
 		expect(increment("foo")).toEqual("foo1")
