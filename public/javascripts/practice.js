@@ -134,6 +134,24 @@ function increment(string) {
 	}
 }
 
+function findIt(numberArray) {
+	var result = 0
+	numberArray.forEach(function(number) {
+			var count = 0
+			for(var index = 0; index < numberArray.length; index++) {
+				if(numberArray[index] === number) {
+					count++
+				}
+			}
+		if(count % 2 === 1) {
+		result = number
+		}
+	})
+	return result
+}
+
+
+
 
 
 
