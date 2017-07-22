@@ -39,8 +39,6 @@ function autoComplete(letters, dictionary) {
 		return result
 }
 
-function countingDuplicates(string) {
-}
 
 function reverseAlphabeticCharacters(string) {
 	var result = []
@@ -151,7 +149,20 @@ function findIt(numberArray) {
 }
 
 
+function onlyUnique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
 
 
+function countingDuplicates(string) {
+	var array = string.split("").sort()
+	var newArray = []
+	for(var index = 0; index < array.length; index++) {
+		if(array[index+1] === array[index]) {
+			newArray.push(array[index])
+		}
+	}
+	return newArray.filter( onlyUnique ).length
+}
 
 
