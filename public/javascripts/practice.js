@@ -166,3 +166,31 @@ function countingDuplicates(string) {
 }
 
 
+function encode(string, code) {
+	var numberArray = []
+	var result = []
+	var codeArray = code.toString().split("")
+	var alphabet = "abcdefghijklmnopqrstuvwxyz"
+	string.split("").forEach(function(letter) {
+	 	numberArray.push(alphabet.indexOf(letter))
+	})
+	for(var index = 0, indextwo = 0; index < string.length; index++, indextwo++) {
+		if(indextwo >= codeArray.length) {
+			indextwo = 0;
+			result.push(numberArray[index] + parseInt(codeArray[indextwo]) + 1)
+		} else {
+			result.push(numberArray[index] + parseInt(codeArray[indextwo]) + 1)
+		}
+	}
+	return result
+	
+}
+
+
+
+
+
+
+
+
+
